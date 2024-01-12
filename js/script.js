@@ -18,7 +18,7 @@ class Weather {
     this.elementCity = document.getElementById('city');
     this.elementTemp = document.getElementById('temp');
     this.elementHumidity = document.getElementById('humidity');
-    this.elementCloud = document.getElementById('cloud')
+    this.elementCloud = document.getElementById('clouds')
     this.elementWind = document.getElementById('wind')
 
     this.elementOkButton.addEventListener('click', event => this.doOkClick(event));
@@ -36,11 +36,11 @@ class Weather {
 
     this.elementTemp.textContent = data.main.temp;
     this.elementHumidity.textContent = data.main.humidity;
-    this.elementCloud.textContent = dete.weather[0].description;
+    this.elementCloud.textContent = data.weather[0].description;
     this.elementWind.textContent = data.wind.speed;
 
   }
-  doKeyPress(event) {
+  doKeypress(event) {
     if(Event.key = "Enter")
     this.doOkClick(event);
   }
