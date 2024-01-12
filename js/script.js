@@ -41,8 +41,11 @@ class Weather {
 
   }
   doKeypress(event) {
-    if(Event.key = "Enter")
-    this.doOkClick(event);
+
+    if(event.key == "Enter") {
+      this.doOkClick(event);
+    }
+
   }
 
 }
