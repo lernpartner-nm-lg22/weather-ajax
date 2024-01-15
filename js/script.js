@@ -37,4 +37,4 @@ class Weather {
 
 }
 
-const weather = new Weather("34357060115ac4f3b93708499ef4443c");
+const weather = new Weather("Your Openweahter Map code here");
